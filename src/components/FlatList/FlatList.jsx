@@ -94,7 +94,7 @@ export default function FlatList() {
   return (
     <>
       {flats?.map((flat) => {
-        return <FlatItem key={flat.id} />;
+        return <FlatItem key={flat.id} curFlat={flat} />;
       })}
     </>
   );
